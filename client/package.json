@@ -15,8 +15,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "PORT=4242 react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
+    "cross-env": "PORT=4080 node server.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier --write \"**/*.{js,jsx}\""
@@ -41,6 +42,13 @@
   },
   "proxy": "http://localhost:5252",
   "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.22",
     "prettier": "^2.7.1"
-  }
+  },
+  "description": "This is the React client for the sample and runs independently of the server.\r Running a backend server is a requirement and a dependency for this React front-end to work. See the README in the root of the project for more details.",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
